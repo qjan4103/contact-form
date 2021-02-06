@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <div class="container">
+     <div class="contact-form">
+    <form>
+      <input type="fname" id="fname" name="firstname" placeholder="Your name.." required>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+      <select id="Gender" name="Gender" type="Gender" required>
+        <option value="australia">Male</option>
+        <option value="canada">Female</option>
+        <option value="usa">Other</option>
+      </select>
+      <select id="Education" name="Education" type="Education" required>
+        <option value="australia">Intermediate</option>
+        <option value="canada">Bachelor</option>
+        <option value="usa">Masters</option>
+      </select>
+      <input type="date" name="dateofbirth" id="dateofbirth" type="dateofbirth" required>
+      <textarea id="address" name="address" placeholder="Enter your address" style="height:80px" required></textarea>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      <input type="checkbox" id="skill1" name="skill1" value="Web Developement" required>
+      <label for="skill1"> Web Developement</label>
+      <input type="checkbox" id="skill2" name="skill2" value="Cloud Computing" required>
+      <label for="skill2">Cloud Computing</label>
+      <input type="checkbox" id="skill3" name="skill3" value="Machine Learning" required>
+      <label for="skill3">Machine Learning</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+   </div>
+
+   <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }
+  </script>
+  </body>
+</html>

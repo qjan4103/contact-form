@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+} 
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: rgb(220,150,90);
+  background: linear-gradient(90deg, rgba(220,150,90,1) 50%, rgba(255,255,255,1) 50%);
+}
+input[type=fname], select, textarea,input[type="date"],input[type="email"]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(0,0,0,0.7);
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family:'Source Sans Pro';
+  font-size: 14px;
+  color: rgb(0,0,0,0.7);
+}
+
+input[type=submit] {
+  font-family:'Source Sans Pro';
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgb(220,150,90);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  text-align: left;
+}
+input[type=text]:focus,input[type=submit]:focus{
+  border: 1px solid rgb(0,0,0,0.7);
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  color: rgb(256,256,256);
+}
+label{
+  font-family:'Source Sans Pro';
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0px 10px;
+}
+form{
+ text-align: center;
+ width: 50%;
+ margin: auto;
+ background: #fff;
+ box-shadow: rgb(0 0 0 / 25%) 0px 25px 50px -12px;
+ padding: 35px;
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.contact-form{
+  padding-top: 7% ;
+}
+input[type=fname],select{
+  width: 49%;
+  float: left;
+}
+#Education{
+  width: 49%;
+  float: right !important;
+}
+input[type=email]{
+  width: 49%;
+  float: right;
+}
+input:focus,textarea:focus{
+  outline: none;
+  box-shadow: none;
+  border: 1px solid rgb(220,150,90) !important;
+}
+@media only screen and (max-width: 760px) {
+  input[type=fname],select{
+    width: 100%;
+  }
+  #Education{
+    width: 100%;
+
+  }
+  input[type=email]{
+    width: 100%;;
+  }
+}
+
